@@ -1,0 +1,48 @@
+/* app-header.component.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+  }
+  
+  .logo a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .navigation ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navigation li {
+    margin: 0 15px;
+  }
+  
+  .navigation a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  
+  .navigation a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    .navigation ul {
+      flex-direction: column;
+    }
+  
+    .navigation li {
+      margin: 10px 0;
+    }
+  }
+  
