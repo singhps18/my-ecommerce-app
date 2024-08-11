@@ -7,25 +7,25 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  products: any[] = [];
+  // products: any[] = [];
 
-  constructor(private productService:InMemoryDataService) { }
+  // constructor(private productService:InMemoryDataService) { }
 
-  ngOnInit(): void {
-    this.productService.getProducts().subscribe(
-      data => {
-        this.products = data.products; // Assuming the response has a 'products' field
-      },
-      error => {
-        console.error('Error fetching products:', error);
-      }
-    );
-  }
+  // ngOnInit(): void {
+  //   this.productService.getProducts().subscribe(
+  //     data => {
+  //       this.products = data.products; // Assuming the response has a 'products' field
+  //     },
+  //     error => {
+  //       console.error('Error fetching products:', error);
+  //     }
+  //   );
+  // }
   
   
 }
