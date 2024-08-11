@@ -8,9 +8,5 @@ import { Observable } from 'rxjs';
 export class InMemoryDataService {
   private apiUrl = 'https://dummyjson.com/products';
 
-  constructor(private http: HttpClient) { }
 
-  getProducts(): Observable<any> {
-    return this.http.get<any>(this.apiUrl);
-  }
 }
