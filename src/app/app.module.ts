@@ -8,6 +8,7 @@ import { HeaderComComponent } from './header-com/header-com.component';
 import { FooterComComponent } from './footer-com/footer-com.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserModule } from '@angular/platform-browser'
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -25,7 +26,9 @@ import { BrowserModule } from '@angular/platform-browser'
   imports: [
     BrowserModule ,
     HttpClientModule,
-    CommonModule
+    CommonModule,
+    FormsModule
+    
     
 
   ],
