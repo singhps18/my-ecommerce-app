@@ -1,1 +1,14 @@
-<p>contact works!</p>
+<ng-container ngTemplateOutlet="show;context:{showmessage:'this is true'}">
+    <ul>
+        @for (fruit of users; track fruit.id) {
+        <li>{{fruit.id}} {{ fruit.name }}</li>
+        }
+    </ul>
+  </ng-container>
+  
+  <ng-template #show let-mes="showmessage">
+    <p>{{mes}}</p>
+  </ng-template>
+  
+ 
+
